@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Financial Services — I&M Bank Help</title>
+    <link rel="icon" type="image/png" href="images/im-logo.png" />
+    <link rel="stylesheet" href="styles.css?v=3" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;1,600&family=DM+Serif+Display&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="nav">
+      <a href="index.html" class="logo-img">
+        <img
+          src="images/im-logo.png"
+          alt="Wendi Logo"
+          style="height: 50px; width: auto; margin-top: 5px"
+        />
+      </a>
+      <div class="nav-right">
+        <a href="#" class="nav-link"
+          >Guides <i class="ti ti-chevron-down" aria-hidden="true"></i
+        ></a>
+      </div>
+    </nav>
+
+    <div class="breadcrumb-bar">
+      <a href="index.html" class="breadcrumb-link">Help</a>
+      <i class="ti ti-chevron-right breadcrumb-sep" aria-hidden="true"></i>
+      <span class="breadcrumb-current">Card Management</span>
+    </div>
+
+    <div class="page-layout">
+      <main class="page-main">
+        <h1 class="page-heading">Card Management</h1>
+
+        <!-- Card Management -->
+        <div class="topic-card" id="transfers">
+          <button
+            class="topic-header"
+            aria-expanded="true"
+            onclick="toggleTopic(this)"
+          >
+            <div class="topic-left">
+              <div class="topic-icon-box">
+                <i class="ti ti-arrows-exchange" aria-hidden="true"></i>
+              </div>
+              <div>
+                <div class="topic-name">Card Management</div>
+                <div class="topic-sub">
+                  Make the most of your Debit and Prepaid Cards through the
+                  self-service features. Learn how to top up your Prepaid Card,
+                  freeze or block a card, and change or reset your PIN.
+                </div>
+              </div>
+            </div>
+            <i class="ti ti-chevron-down chevron open" aria-hidden="true"></i>
+          </button>
+          <div class="topic-body open">
+            <ul class="topic-links">
+              <li>
+                <a href="prepaid-card-top-up.html">Prepaid Card Top-Up</a>
+              </li>
+              <li><a href="#">Block Card</a></li>
+              <li><a href="#">Change or Reset Pin</a></li>
+              <li><a href="#">Mark Card as Lost</a></li>
+              <li><a href="#">Activate New Card</a></li>
+              <li><a href="#">Request for Replacement Card</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- BILL PAYMENT -->
+        <div class="topic-card">
+          <button
+            class="topic-header"
+            aria-expanded="false"
+            onclick="toggleTopic(this)"
+          >
+            <div class="topic-left">
+              <div class="topic-icon-box">
+                <i class="ti ti-file-invoice" aria-hidden="true"></i>
+              </div>
+              <div>
+                <div class="topic-name">Bill Payment</div>
+                <div class="topic-sub">Pay your essential bills quickly</div>
+              </div>
+            </div>
+            <i class="ti ti-chevron-down chevron" aria-hidden="true"></i>
+          </button>
+          <div class="topic-body">
+            <ul class="topic-links">
+              <li><a href="#">Utility Bills</a></li>
+              <li><a href="#">TV Subscriptions</a></li>
+              <li><a href="#">Internet Bills</a></li>
+              <li><a href="#">School Fees</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- GROUPS -->
+        <div class="topic-card">
+          <button
+            class="topic-header"
+            aria-expanded="false"
+            onclick="toggleTopic(this)"
+          >
+            <div class="topic-left">
+              <div class="topic-icon-box">
+                <i class="ti ti-users-group" aria-hidden="true"></i>
+              </div>
+              <div>
+                <div class="topic-name">Groups</div>
+                <div class="topic-sub">Manage group money with confidence</div>
+              </div>
+            </div>
+            <i class="ti ti-chevron-down chevron" aria-hidden="true"></i>
+          </button>
+          <div class="topic-body">
+            <ul class="topic-links">
+              <li><a href="#">Create a Group</a></li>
+              <li><a href="#">Invite Members</a></li>
+              <li><a href="#">Group Contributions</a></li>
+              <li><a href="#">Group Withdrawals</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- LOANS -->
+        <div class="topic-card">
+          <button
+            class="topic-header"
+            aria-expanded="false"
+            onclick="toggleTopic(this)"
+          >
+            <div class="topic-left">
+              <div class="topic-icon-box">
+                <i class="ti ti-coin" aria-hidden="true"></i>
+              </div>
+              <div>
+                <div class="topic-name">Loans</div>
+                <div class="topic-sub">Enjoy our lending services</div>
+              </div>
+            </div>
+            <i class="ti ti-chevron-down chevron" aria-hidden="true"></i>
+          </button>
+          <div class="topic-body">
+            <ul class="topic-links">
+              <li><a href="#">Apply for a Loan</a></li>
+              <li><a href="#">Check Loan Status</a></li>
+              <li><a href="#">Repay a Loan</a></li>
+              <li><a href="#">Loan Eligibility</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ACCOUNT SERVICES -->
+        <div class="topic-card">
+          <button
+            class="topic-header"
+            aria-expanded="false"
+            onclick="toggleTopic(this)"
+          >
+            <div class="topic-left">
+              <div class="topic-icon-box">
+                <i class="ti ti-settings" aria-hidden="true"></i>
+              </div>
+              <div>
+                <div class="topic-name">Account Services</div>
+                <div class="topic-sub">
+                  Manage your profile, statements, security and referrals
+                </div>
+              </div>
+            </div>
+            <i class="ti ti-chevron-down chevron" aria-hidden="true"></i>
+          </button>
+          <div class="topic-body">
+            <ul class="topic-links">
+              <li><a href="#">Edit Profile</a></li>
+              <li><a href="#">View Statements</a></li>
+              <li><a href="#">Change PIN</a></li>
+              <li><a href="#">Referral Programme</a></li>
+            </ul>
+          </div>
+        </div>
+      </main>
+
+      <aside class="page-aside">
+        <div class="aside-card">
+          <h3 class="aside-heading">Popular Articles</h3>
+          <ul class="aside-links">
+            <li>
+              <a href="#"
+                ><i class="ti ti-arrow-right" aria-hidden="true"></i>Mobile
+                Money</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="ti ti-arrow-right" aria-hidden="true"></i>EFT /
+                RTGS</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="ti ti-arrow-right" aria-hidden="true"></i
+                >International Transfers (TTs)</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="ti ti-arrow-right" aria-hidden="true"></i>URA
+                Payment</a
+              >
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+
+    <footer class="footer">
+      <p>&copy; 2026 I&M Bank. All rights reserved.</p>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>

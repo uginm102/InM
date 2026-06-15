@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I&M Bank Help & Support</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Custom CSS -->
+    <style>
+        :root {
+            --im-dark-blue: #051a8f;
+            --im-light-blue: #007db0;
+            --bg-light-grey: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+        }
+
+        /* Typography & Colors */
+        .text-im-dark { color: var(--im-dark-blue) !important; }
+        .text-im-light { color: var(--im-light-blue) !important; }
+        .bg-im-dark { background-color: var(--im-dark-blue) !important; }
+        .bg-im-light { background-color: var(--im-light-blue) !important; }
+
+        /* Search Bar */
+        .search-container {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .search-input {
+            border-radius: 50px;
+            padding: 15px 25px 15px 50px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border: 1px solid #ddd;
+        }
+        .search-icon {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10;
+            color: #6c757d;
+        }
+
+        /* Quick Links */
+        .quick-link-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: var(--bg-light-grey);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: var(--im-dark-blue);
+            margin: 0 auto 10px;
+            transition: all 0.3s ease;
+        }
+        .quick-link:hover .quick-link-icon {
+            background-color: var(--im-dark-blue);
+            color: white;
+            cursor: pointer;
+        }
+
+        /* Useful Guides Cards */
+        .guide-card {
+            border: none;
+            border-radius: 12px;
+            background-color: var(--bg-light-grey);
+            height: 100%;
+        }
+        .badge-guide {
+            background-color: #e9ecef;
+            color: var(--im-dark-blue);
+            border-radius: 20px;
+            padding: 5px 12px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        /* Accordion Overrides */
+        .accordion-button:not(.collapsed) {
+            background-color: rgba(0, 125, 176, 0.1);
+            color: var(--im-dark-blue);
+            font-weight: bold;
+        }
+        .accordion-button:focus {
+            box-shadow: none;
+            border-color: rgba(0,0,0,.125);
+        }
+        .topic-list li {
+            margin-bottom: 8px;
+            color: #555;
+        }
+        .topic-list i {
+            color: var(--im-light-blue);
+            margin-right: 8px;
+            font-size: 0.8rem;
+        }
+
+        /* Sidebar Popular Articles */
+        .popular-articles {
+            background-color: var(--bg-light-grey);
+            border-radius: 12px;
+            padding: 20px;
+        }
+        .popular-articles ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .popular-articles li {
+            padding: 10px 0;
+            border-bottom: 1px solid #e9ecef;
+            color: var(--im-light-blue);
+            cursor: pointer;
+        }
+        .popular-articles li:last-child {
+            border-bottom: none;
+        }
+
+        /* Step-by-Step Guides */
+        .nav-tabs .nav-link {
+            color: #6c757d;
+            border: none;
+            border-bottom: 2px solid transparent;
+            font-weight: 600;
+        }
+        .nav-tabs .nav-link.active {
+            color: var(--im-dark-blue);
+            border-bottom: 2px solid var(--im-dark-blue);
+            background: transparent;
+        }
+        .step-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        .step-list li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+        }
+        .step-list i {
+            margin-top: 4px;
+            margin-right: 12px;
+            color: #ccc;
+            font-size: 1.1rem;
+        }
+
+        /* Mobile Mockup Placeholder */
+        .mobile-mockup {
+            width: 100%;
+            max-width: 260px;
+            height: 500px;
+            border: 2px solid #333;
+            border-radius: 30px;
+            margin: 0 auto;
+            position: relative;
+            background: 
+                linear-gradient(to bottom right, transparent 49.5%, #999 49.5%, #999 50.5%, transparent 50.5%),
+                linear-gradient(to top right, transparent 49.5%, #999 49.5%, #999 50.5%, transparent 50.5%);
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Nav -->
+    <header class="py-3 border-bottom">
+        <div class="container d-flex align-items-center">
+            <h1 class="m-0 text-im-dark fw-bold" style="font-size: 2rem; letter-spacing: -1px;">iM</h1>
+        </div>
+    </header>
+
+    <!-- Main Hero Section -->
+    <section class="py-5 text-center">
+        <div class="container">
+            <h3 class="mb-4 text-im-dark">Good Evening! Welcome to I&M Bank Help & Support</h3>
+            
+            <!-- Search Bar -->
+            <div class="search-container position-relative mb-5">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" class="form-control form-control-lg search-input w-100" placeholder="How can we help?">
+            </div>
+
+            <!-- Quick Links -->
+            <div class="row text-center justify-content-center mb-5 g-3">
+                <div class="col-6 col-md-2 quick-link">
+                    <div class="quick-link-icon"><i class="far fa-credit-card"></i></div>
+                    <span class="fw-semibold small">Card Management</span>
+                </div>
+                <div class="col-6 col-md-2 quick-link">
+                    <div class="quick-link-icon"><i class="fas fa-exchange-alt"></i></div>
+                    <span class="fw-semibold small">Transfers</span>
+                </div>
+                <div class="col-6 col-md-2 quick-link">
+                    <div class="quick-link-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <span class="fw-semibold small">Mobile Money</span>
+                </div>
+                <div class="col-6 col-md-2 quick-link">
+                    <div class="quick-link-icon"><i class="fas fa-hand-holding-usd"></i></div>
+                    <span class="fw-semibold small">Loans</span>
+                </div>
+                <div class="col-6 col-md-2 quick-link">
+                    <div class="quick-link-icon"><i class="fas fa-file-invoice-dollar"></i></div>
+                    <span class="fw-semibold small">Utility Payments</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Useful Guides Section -->
+    <section class="py-4 bg-white">
+        <div class="container">
+            <h4 class="mb-4 text-im-dark">Useful Guides</h4>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                <!-- Guide 1 -->
+                <div class="col">
+                    <div class="card guide-card p-4">
+                        <div><span class="badge-guide d-inline-block mb-3">Guide</span></div>
+                        <h6 class="fw-bold mb-3">Internet Banking User Guide</h6>
+                        <p class="small text-muted mb-0">Learn what you should do when you find an unauthorised card transaction on your DBS/POSB card statement.</p>
+                    </div>
+                </div>
+                <!-- Guide 2 -->
+                <div class="col">
+                    <div class="card guide-card p-4">
+                        <div><span class="badge-guide d-inline-block mb-3">Guide</span></div>
+                        <h6 class="fw-bold mb-3">Mobile Banking User Guide</h6>
+                        <p class="small text-muted mb-0">Find out what we are doing to better protect you from malware threats and scams.</p>
+                    </div>
+                </div>
+                <!-- Guide 3 -->
+                <div class="col">
+                    <div class="card guide-card p-4">
+                        <div><span class="badge-guide d-inline-block mb-3">Guide</span></div>
+                        <h6 class="fw-bold mb-3">How to Process Salaries with Internet Banking</h6>
+                        <p class="small text-muted mb-0">Find out what you should do and how you can prevent yourself from becoming a victim of an alleged scam or fraud attempt.</p>
+                    </div>
+                </div>
+                <!-- Guide 4 -->
+                <div class="col">
+                    <div class="card guide-card p-4">
+                        <div><span class="badge-guide d-inline-block mb-3">Guide</span></div>
+                        <h6 class="fw-bold mb-3">Generate a Bank Statement</h6>
+                        <p class="small text-muted mb-0">Submit your waiver request for an annual fee, finance or late charge via our digital services.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Help Topics & Sidebar Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Main Topics Accordion -->
+                <div class="col-lg-8 mb-4">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h4 class="text-im-dark m-0">Help Topic</h4>
+                    </div>
+
+                    <div class="accordion" id="helpTopicsAccordion">
+                        <!-- Topic 1 -->
+                        <div class="accordion-item mb-3 border-0 shadow-sm rounded">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button rounded" type="button" data-bs-toggle="collapse" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <i class="far fa-credit-card me-3 fs-5"></i> Card Management
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#helpTopicsAccordion">
+                                <div class="accordion-body">
+                                    <p class="text-muted small">Make the most of your Debit and Prepaid Cards through the self-service features. Learn how to top up your Prepaid Card, freeze or block a card, and change or reset your PIN.</p>
+                                    <div class="row mt-3">
+                                        <div class="col-md-6">
+                                            <ul class="list-unstyled topic-list small fw-semibold">
+                                                <li><i class="fas fa-circle"></i> Prepaid Card Top-Up</li>
+                                                <li><i class="fas fa-circle"></i> Block Card</li>
+                                                <li><i class="fas fa-circle"></i> Change or Reset Pin</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <ul class="list-unstyled topic-list small fw-semibold">
+                                                <li><i class="fas fa-circle"></i> Mark Card as Lost</li>
+                                                <li><i class="fas fa-circle"></i> Activate New Card</li>
+                                                <li><i class="fas fa-circle"></i> Request for Replacement Card</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Topic 2 -->
+                        <div class="accordion-item mb-3 border-0 shadow-sm rounded">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed rounded" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <i class="fas fa-exchange-alt me-3 fs-5"></i> Transfers
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#helpTopicsAccordion">
+                                <div class="accordion-body">
+                                    <p class="text-muted small">Choose how you want to move your money across Banks, Wallets (MTN, Airtel and Flexipay) and Western Union.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Topic 3 -->
+                        <div class="accordion-item mb-3 border-0 shadow-sm rounded">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed rounded" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <i class="fas fa-hand-holding-usd me-3 fs-5"></i> Loans
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#helpTopicsAccordion">
+                                <div class="accordion-body">
+                                    <p class="text-muted small">Enjoy our lending services.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Topic 4 -->
+                        <div class="accordion-item mb-3 border-0 shadow-sm rounded">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed rounded" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    <i class="fas fa-file-invoice-dollar me-3 fs-5"></i> Utility Payments
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#helpTopicsAccordion">
+                                <div class="accordion-body">
+                                    <p class="text-muted small">Pay your essential bills quickly.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Topic 5 -->
+                        <div class="accordion-item mb-3 border-0 shadow-sm rounded">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed rounded" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    <i class="fas fa-user-cog me-3 fs-5"></i> Account Services
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#helpTopicsAccordion">
+                                <div class="accordion-body">
+                                    <p class="text-muted small">Manage your profile, statements, security and referrals.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="col-lg-4">
+                    <div class="popular-articles shadow-sm">
+                        <h6 class="fw-bold mb-3 text-im-dark">Popular Articles</h6>
+                        <ul>
+                            <li>Mobile Money</li>
+                            <li>EFT/RTGS</li>
+                            <li>International Transfers (TTs)</li>
+                            <li>URA Payment</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Debit and Prepaid Card Management Guide Section -->
+    <section class="py-5 bg-white border-top">
+        <div class="container">
+            <h4 class="text-im-dark mb-3">Guides</h4>
+            <h5 class="fw-bold">Debit and Prepaid Card Management</h5>
+            <p class="text-muted small w-75 mb-4">Use our Internet and Mobile Banking self-service card management tools to securely manage your cards and perform common card-related actions directly from your device.</p>
+
+            <!-- Tabs -->
+            <ul class="nav nav-tabs mb-4 border-bottom-0" id="guideTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active px-0 pb-3 me-4" id="onthego-tab" data-bs-toggle="tab" data-bs-target="#onthego" type="button" role="tab" aria-controls="onthego" aria-selected="true">On The Go</button>
+                </li>
+            </ul>
+
+            <!-- Tab Content -->
+            <div class="tab-content" id="guideTabsContent">
+                <div class="tab-pane fade show active" id="onthego" role="tabpanel" aria-labelledby="onthego-tab">
+                    <div class="row align-items-center">
+                        
+                        <!-- Steps List -->
+                        <div class="col-md-6 mb-4">
+                            <ul class="step-list small">
+                                <li><i class="far fa-square"></i> <div><strong>Step 1</strong><br><span class="text-muted">Log in to On The Go with mobile with your Fingerprint or Password.</span></div></li>
+                                <li><i class="far fa-square"></i> <div><strong>Step 2</strong><br><span class="text-muted">Tap on Cards button</span></div></li>
+                                <li><i class="far fa-square"></i> <div><strong>Step 3</strong><br><span class="text-muted">Select the Prepaid Cards option</span></div></li>
+                                <li><i class="far fa-square"></i> <div><strong>Step 4</strong><br><span class="text-muted">Tap the 3 dots and select the Top-up prepaid Card option</span></div></li>
+                                <li><i class="far fa-square"></i> <div><strong>Step 5</strong><br><span class="text-muted">Select from your accounts the one you wish to fund the card</span></div></li>
+                                <li><i class="far fa-square"></i> <div><strong>Step 6</strong><br><span class="text-muted">Confirm whether it is your card or another that you wish to top-up. If your own, select the top-up currency</span></div></li>
+                                <li><i class="far fa-square"></i> <div><strong>Step 7</strong><br><span class="text-muted">Enter the top-up amount and add transaction remarks</span></div></li>
+                                <li><i class="far fa-square"></i> <div><strong>Step 8</strong><br><span class="text-muted">Mark the checkbox to confirm details above and tap Submit to continue</span></div></li>
+                                <li><i class="far fa-square"></i> <div><strong>Step 9</strong><br><span class="text-muted">Enter generated one-time password (OTP) to complete the card top-up</span></div></li>
+                            </ul>
+                        </div>
+
+                        <!-- Mobile Mockup Box -->
+                        <div class="col-md-6 text-center">
+                            <div class="mobile-mockup mb-3 shadow"></div>
+                            <p class="fw-bold text-im-light mb-0">Get the latest On The Go app now!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
