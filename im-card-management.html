@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Card Management — I&amp;M Bank Help</title>
+  <link rel="stylesheet" href="im-styles.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <div class="top-stripe"></div>
+
+  <nav class="nav">
+    <a href="im-index.html" class="logo">
+      <span class="logo-i">I</span><span class="logo-amp">&amp;</span><span class="logo-m">M</span>
+      <span class="logo-bank">Bank</span>
+    </a>
+    <a href="im-guides.html" class="nav-link">Guides <i class="ti ti-chevron-down" style="font-size:12px;"></i></a>
+  </nav>
+
+  <div class="breadcrumb-bar">
+    <a href="im-index.html" class="breadcrumb-link">Help</a>
+    <i class="ti ti-chevron-right breadcrumb-sep"></i>
+    <span class="breadcrumb-current">Card Management</span>
+  </div>
+
+  <div class="page-layout">
+    <main class="page-main">
+      <h1 class="page-heading">Card Management</h1>
+
+      <!-- Card Management — open by default -->
+      <div class="topic-card">
+        <button class="topic-header" aria-expanded="true" onclick="toggleTopic(this)">
+          <div class="topic-left">
+            <div class="topic-icon-box"><i class="ti ti-credit-card"></i></div>
+            <div>
+              <div class="topic-name">Card Management</div>
+              <div class="topic-sub">Make the most of your Debit and Prepaid Cards through self-service features</div>
+            </div>
+          </div>
+          <i class="ti ti-chevron-up chevron open"></i>
+        </button>
+        <div class="topic-body open">
+          <ul class="topic-links">
+            <li><a href="im-prepaid-topup.html">Prepaid Card Top-Up</a></li>
+            <li><a href="im-block-card.html">Block Card</a></li>
+            <li><a href="im-change-pin.html">Change or Reset PIN</a></li>
+            <li><a href="im-lost-card.html">Mark Card as Lost</a></li>
+            <li><a href="im-activate-card.html">Activate New Card</a></li>
+            <li><a href="im-replacement-card.html">Request for Replacement Card</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Transfers -->
+      <div class="topic-card">
+        <button class="topic-header" aria-expanded="false" onclick="toggleTopic(this)">
+          <div class="topic-left">
+            <div class="topic-icon-box"><i class="ti ti-arrows-exchange"></i></div>
+            <div>
+              <div class="topic-name">Transfers</div>
+              <div class="topic-sub">Move money across banks, wallets and Western Union</div>
+            </div>
+          </div>
+          <i class="ti ti-chevron-down chevron"></i>
+        </button>
+        <div class="topic-body">
+          <ul class="topic-links">
+            <li><a href="#">EFT / RTGS</a></li>
+            <li><a href="#">International Transfers (TTs)</a></li>
+            <li><a href="#">Mobile Money Transfer</a></li>
+            <li><a href="#">Western Union</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Loans -->
+      <div class="topic-card">
+        <button class="topic-header" aria-expanded="false" onclick="toggleTopic(this)">
+          <div class="topic-left">
+            <div class="topic-icon-box"><i class="ti ti-coin"></i></div>
+            <div>
+              <div class="topic-name">Loans</div>
+              <div class="topic-sub">Enjoy our lending services</div>
+            </div>
+          </div>
+          <i class="ti ti-chevron-down chevron"></i>
+        </button>
+        <div class="topic-body">
+          <ul class="topic-links">
+            <li><a href="#">Apply for a Loan</a></li>
+            <li><a href="#">Check Loan Status</a></li>
+            <li><a href="#">Loan Repayment</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Utility Payments -->
+      <div class="topic-card">
+        <button class="topic-header" aria-expanded="false" onclick="toggleTopic(this)">
+          <div class="topic-left">
+            <div class="topic-icon-box"><i class="ti ti-file-invoice"></i></div>
+            <div>
+              <div class="topic-name">Utility Payments</div>
+              <div class="topic-sub">Pay your essential bills quickly</div>
+            </div>
+          </div>
+          <i class="ti ti-chevron-down chevron"></i>
+        </button>
+        <div class="topic-body">
+          <ul class="topic-links">
+            <li><a href="#">URA Tax Payment</a></li>
+            <li><a href="#">UMEME Electricity</a></li>
+            <li><a href="#">Water Bills</a></li>
+            <li><a href="#">TV Subscriptions</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Account Services -->
+      <div class="topic-card">
+        <button class="topic-header" aria-expanded="false" onclick="toggleTopic(this)">
+          <div class="topic-left">
+            <div class="topic-icon-box"><i class="ti ti-settings"></i></div>
+            <div>
+              <div class="topic-name">Account Services</div>
+              <div class="topic-sub">Manage your profile, statements, security and referrals</div>
+            </div>
+          </div>
+          <i class="ti ti-chevron-down chevron"></i>
+        </button>
+        <div class="topic-body">
+          <ul class="topic-links">
+            <li><a href="#">Generate Bank Statement</a></li>
+            <li><a href="#">Update Profile Details</a></li>
+            <li><a href="#">Change Internet Banking Password</a></li>
+            <li><a href="#">Register for Internet Banking</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </main>
+
+    <aside class="page-aside">
+      <div class="aside-card">
+        <h3 class="aside-heading">Popular Articles</h3>
+        <ul class="aside-links">
+          <li><a href="im-mobile-money.html"><i class="ti ti-arrow-right"></i>Mobile Money</a></li>
+          <li><a href="im-eft-rtgs.html"><i class="ti ti-arrow-right"></i>EFT / RTGS</a></li>
+          <li><a href="im-international-transfers.html"><i class="ti ti-arrow-right"></i>International Transfers (TTs)</a></li>
+          <li><a href="im-ura-payment.html"><i class="ti ti-arrow-right"></i>URA Payment</a></li>
+        </ul>
+      </div>
+      <div class="aside-card">
+        <h3 class="aside-heading">Need more help?</h3>
+        <p style="font-size:13px;color:var(--c-text-secondary);margin-bottom:12px;">Our team is available 24/7.</p>
+        <a href="im-contact.html" class="contact-btn"><i class="ti ti-headset"></i> Contact Us</a>
+      </div>
+    </aside>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2025 I&amp;M Bank. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleTopic(headerEl) {
+      const body = headerEl.closest('.topic-card').querySelector('.topic-body');
+      const chevron = headerEl.querySelector('.chevron');
+      const isOpen = body.classList.contains('open');
+      body.classList.toggle('open', !isOpen);
+      chevron.classList.toggle('open', !isOpen);
+      chevron.className = `ti ${isOpen ? 'ti-chevron-down' : 'ti-chevron-up'} chevron${isOpen ? '' : ' open'}`;
+      headerEl.setAttribute('aria-expanded', String(!isOpen));
+    }
+  </script>
+</body>
+</html>

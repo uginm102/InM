@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prepaid Card Top-Up — I&amp;M Bank Help</title>
+  <link rel="stylesheet" href="im-styles.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <div class="top-stripe"></div>
+
+  <nav class="nav">
+    <a href="im-index.html" class="logo">
+      <span class="logo-i">I</span><span class="logo-amp">&amp;</span><span class="logo-m">M</span>
+      <span class="logo-bank">Bank</span>
+    </a>
+    <a href="im-guides.html" class="nav-link">Guides <i class="ti ti-chevron-down" style="font-size:12px;"></i></a>
+  </nav>
+
+  <div class="breadcrumb-bar">
+    <a href="im-index.html" class="breadcrumb-link">Help</a>
+    <i class="ti ti-chevron-right breadcrumb-sep"></i>
+    <a href="im-card-management.html" class="breadcrumb-link">Card Management</a>
+    <i class="ti ti-chevron-right breadcrumb-sep"></i>
+    <span class="breadcrumb-current">Prepaid Card Top-Up</span>
+  </div>
+
+  <div class="page-layout">
+    <main class="page-main">
+      <h1 class="page-heading">Debit and Prepaid Card Management</h1>
+      <p class="article-intro">Use the On The Go mobile app's self-service card management tools to securely top up your Prepaid Card directly from your device in minutes.</p>
+
+      <div class="article-grid">
+
+        <!-- ── STEPS ── -->
+        <div class="steps-list" id="stepsList">
+
+          <div class="step-item active" data-step="0" onclick="goToStep(0)">
+            <div class="step-num">1</div>
+            <div class="step-content">
+              <h3 class="step-title">Log in to On The Go</h3>
+              <p class="step-desc">Open the On The Go mobile app and log in using your Fingerprint or Password.</p>
+            </div>
+          </div>
+
+          <div class="step-item" data-step="1" onclick="goToStep(1)">
+            <div class="step-num">2</div>
+            <div class="step-content">
+              <h3 class="step-title">Tap on Cards</h3>
+              <p class="step-desc">From the home screen, tap the <strong>Cards</strong> button.</p>
+            </div>
+          </div>
+
+          <div class="step-item" data-step="2" onclick="goToStep(2)">
+            <div class="step-num">3</div>
+            <div class="step-content">
+              <h3 class="step-title">Select Prepaid Cards</h3>
+              <p class="step-desc">Choose the <strong>Prepaid Cards</strong> option from the card list.</p>
+            </div>
+          </div>
+
+          <div class="step-item" data-step="3" onclick="goToStep(3)">
+            <div class="step-num">4</div>
+            <div class="step-content">
+              <h3 class="step-title">Open Top-Up option</h3>
+              <p class="step-desc">Tap the <strong>3 dots (⋮)</strong> menu and select <strong>Top-up Prepaid Card</strong>.</p>
+            </div>
+          </div>
+
+          <div class="step-item" data-step="4" onclick="goToStep(4)">
+            <div class="step-num">5</div>
+            <div class="step-content">
+              <h3 class="step-title">Select funding account</h3>
+              <p class="step-desc">Choose the account you wish to fund the card from.</p>
+            </div>
+          </div>
+
+          <div class="step-item" data-step="5" onclick="goToStep(5)">
+            <div class="step-num">6</div>
+            <div class="step-content">
+              <h3 class="step-title">Confirm card &amp; currency</h3>
+              <p class="step-desc">Confirm whether it is your own card or another. If yours, select the top-up currency.</p>
+            </div>
+          </div>
+
+          <div class="step-item" data-step="6" onclick="goToStep(6)">
+            <div class="step-num">7</div>
+            <div class="step-content">
+              <h3 class="step-title">Enter amount &amp; remarks</h3>
+              <p class="step-desc">Enter the top-up amount and add any transaction remarks.</p>
+            </div>
+          </div>
+
+          <div class="step-item" data-step="7" onclick="goToStep(7)">
+            <div class="step-num">8</div>
+            <div class="step-content">
+              <h3 class="step-title">Confirm &amp; Submit</h3>
+              <p class="step-desc">Mark the checkbox to confirm your details, then tap <strong>Submit</strong> to continue.</p>
+            </div>
+          </div>
+
+          <div class="step-item" data-step="8" onclick="goToStep(8)">
+            <div class="step-num">9</div>
+            <div class="step-content">
+              <h3 class="step-title">Enter OTP</h3>
+              <p class="step-desc">Enter the generated one-time password (OTP) to complete the card top-up.</p>
+            </div>
+          </div>
+
+        </div><!-- /steps-list -->
+
+        <!-- ── PHONE CAROUSEL ── -->
+        <div class="carousel-col" id="carouselCol">
+
+          <div class="mobile-step-info" id="mobileStepInfo">
+            <span class="mobile-step-counter" id="mobileCounter">Step 1 of 9</span>
+            <span class="mobile-step-title" id="mobileTitleText">Log in to On The Go</span>
+            <div class="carousel-dots" id="carouselDotsMobile">
+              <button class="dot active" onclick="goToStep(0)"></button>
+              <button class="dot" onclick="goToStep(1)"></button>
+              <button class="dot" onclick="goToStep(2)"></button>
+              <button class="dot" onclick="goToStep(3)"></button>
+              <button class="dot" onclick="goToStep(4)"></button>
+              <button class="dot" onclick="goToStep(5)"></button>
+              <button class="dot" onclick="goToStep(6)"></button>
+              <button class="dot" onclick="goToStep(7)"></button>
+              <button class="dot" onclick="goToStep(8)"></button>
+            </div>
+          </div>
+
+          <div class="phone-frame-wrap">
+            <button class="swipe-btn" id="prevBtn" onclick="goToStep(currentStep-1)" disabled>&#8249;</button>
+            <div class="phone-frame">
+              <div class="phone-screen" id="phoneScreen">
+
+                <!-- Slides: replace src with real screenshots -->
+                <div class="slide active" id="slide-0">
+                  <div class="placeholder">
+                    <i class="ti ti-fingerprint"></i>
+                    <span>Log in with Fingerprint or Password</span>
+                  </div>
+                </div>
+                <div class="slide" id="slide-1">
+                  <div class="placeholder">
+                    <i class="ti ti-credit-card"></i>
+                    <span>Tap Cards on home screen</span>
+                  </div>
+                </div>
+                <div class="slide" id="slide-2">
+                  <div class="placeholder">
+                    <i class="ti ti-credit-card-pay"></i>
+                    <span>Select Prepaid Cards</span>
+                  </div>
+                </div>
+                <div class="slide" id="slide-3">
+                  <div class="placeholder">
+                    <i class="ti ti-dots-vertical"></i>
+                    <span>Tap ⋮ then Top-up Prepaid Card</span>
+                  </div>
+                </div>
+                <div class="slide" id="slide-4">
+                  <div class="placeholder">
+                    <i class="ti ti-building-bank"></i>
+                    <span>Select funding account</span>
+                  </div>
+                </div>
+                <div class="slide" id="slide-5">
+                  <div class="placeholder">
+                    <i class="ti ti-currency-dollar"></i>
+                    <span>Confirm card &amp; top-up currency</span>
+                  </div>
+                </div>
+                <div class="slide" id="slide-6">
+                  <div class="placeholder">
+                    <i class="ti ti-cash"></i>
+                    <span>Enter amount &amp; remarks</span>
+                  </div>
+                </div>
+                <div class="slide" id="slide-7">
+                  <div class="placeholder">
+                    <i class="ti ti-checkbox"></i>
+                    <span>Confirm details &amp; tap Submit</span>
+                  </div>
+                </div>
+                <div class="slide" id="slide-8">
+                  <div class="placeholder">
+                    <i class="ti ti-message-2-code"></i>
+                    <span>Enter OTP to complete</span>
+                  </div>
+                </div>
+
+              </div><!-- /phone-screen -->
+            </div><!-- /phone-frame -->
+            <button class="swipe-btn" id="nextBtn" onclick="goToStep(currentStep+1)">&#8250;</button>
+          </div><!-- /phone-frame-wrap -->
+
+          <div class="carousel-dots" id="carouselDots">
+            <button class="dot active" onclick="goToStep(0)"></button>
+            <button class="dot" onclick="goToStep(1)"></button>
+            <button class="dot" onclick="goToStep(2)"></button>
+            <button class="dot" onclick="goToStep(3)"></button>
+            <button class="dot" onclick="goToStep(4)"></button>
+            <button class="dot" onclick="goToStep(5)"></button>
+            <button class="dot" onclick="goToStep(6)"></button>
+            <button class="dot" onclick="goToStep(7)"></button>
+            <button class="dot" onclick="goToStep(8)"></button>
+          </div>
+
+        </div><!-- /carousel-col -->
+
+      </div><!-- /article-grid -->
+
+      <div class="article-notice" style="margin-top:32px;">
+        <i class="ti ti-info-circle"></i>
+        <p>You will receive an SMS notification once your Prepaid Card has been successfully topped up. Top-ups are usually instant.</p>
+      </div>
+
+      <div class="related-articles">
+        <h3 class="related-heading">Related Articles</h3>
+        <div class="related-grid">
+          <a href="im-block-card.html" class="related-card">
+            <i class="ti ti-lock"></i><span>Block Card</span>
+          </a>
+          <a href="im-activate-card.html" class="related-card">
+            <i class="ti ti-credit-card"></i><span>Activate New Card</span>
+          </a>
+          <a href="im-change-pin.html" class="related-card">
+            <i class="ti ti-password-mobile-phone"></i><span>Change or Reset PIN</span>
+          </a>
+        </div>
+      </div>
+
+    </main>
+
+    <aside class="page-aside">
+      <div class="aside-card">
+        <h3 class="aside-heading">Popular Articles</h3>
+        <ul class="aside-links">
+          <li><a href="im-mobile-money.html"><i class="ti ti-arrow-right"></i>Mobile Money</a></li>
+          <li><a href="im-eft-rtgs.html"><i class="ti ti-arrow-right"></i>EFT / RTGS</a></li>
+          <li><a href="im-international-transfers.html"><i class="ti ti-arrow-right"></i>International Transfers (TTs)</a></li>
+          <li><a href="im-ura-payment.html"><i class="ti ti-arrow-right"></i>URA Payment</a></li>
+        </ul>
+      </div>
+      <div class="aside-card">
+        <h3 class="aside-heading">Need more help?</h3>
+        <p style="font-size:13px;color:var(--c-text-secondary);margin-bottom:12px;">Our team is available 24/7.</p>
+        <a href="im-contact.html" class="contact-btn"><i class="ti ti-headset"></i> Contact Us</a>
+      </div>
+    </aside>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2025 I&amp;M Bank. All rights reserved.</p>
+  </footer>
+
+  <script>
+    var currentStep = 0;
+    var totalSteps = 9;
+
+    var stepTitles = [
+      'Log in to On The Go',
+      'Tap on Cards',
+      'Select Prepaid Cards',
+      'Open Top-Up option',
+      'Select funding account',
+      'Confirm card & currency',
+      'Enter amount & remarks',
+      'Confirm & Submit',
+      'Enter OTP'
+    ];
+
+    function goToStep(index) {
+      if (index < 0 || index >= totalSteps) return;
+
+      document.querySelectorAll('.step-item').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('.slide').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('.dot').forEach(el => el.classList.remove('active'));
+
+      document.querySelector('[data-step="' + index + '"]')?.classList.add('active');
+      document.getElementById('slide-' + index)?.classList.add('active');
+      document.querySelectorAll('.dot')[index]?.classList.add('active');
+
+      document.getElementById('mobileCounter').textContent = 'Step ' + (index + 1) + ' of ' + totalSteps;
+      document.getElementById('mobileTitleText').textContent = stepTitles[index];
+
+      document.getElementById('prevBtn').disabled = index === 0;
+      document.getElementById('nextBtn').disabled = index === totalSteps - 1;
+
+      // scroll step into view on mobile
+      if (window.innerWidth <= 680) {
+        document.querySelector('[data-step="' + index + '"]')?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+
+      currentStep = index;
+    }
+
+    // Scroll-spy
+    function onScroll() {
+      var items = document.querySelectorAll('.step-item');
+      var mid = window.scrollY + window.innerHeight * 0.42;
+      var best = 0, bestDist = Infinity;
+      items.forEach(function(item, i) {
+        var rect = item.getBoundingClientRect();
+        var itemMid = window.scrollY + rect.top + rect.height / 2;
+        var dist = Math.abs(itemMid - mid);
+        if (dist < bestDist) { bestDist = dist; best = i; }
+      });
+      if (best !== currentStep) goToStep(best);
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+
+    // Touch swipe on phone
+    var touchStartX = 0;
+    document.getElementById('phoneScreen')?.addEventListener('touchstart', function(e) {
+      touchStartX = e.touches[0].clientX;
+    }, { passive: true });
+    document.getElementById('phoneScreen')?.addEventListener('touchend', function(e) {
+      var dx = e.changedTouches[0].clientX - touchStartX;
+      if (Math.abs(dx) > 40) goToStep(currentStep + (dx < 0 ? 1 : -1));
+    }, { passive: true });
+  </script>
+</body>
+</html>
