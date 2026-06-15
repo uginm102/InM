@@ -1,5 +1,5 @@
 /* ===========================
-   WENDI HELP & SUPPORT — STYLES
+   I&M HELP & SUPPORT — STYLES
    =========================== */
 
 /* --- Reset & Base --- */
@@ -345,7 +345,7 @@ ul { list-style: none; }
 
 /* --- Footer --- */
 .footer {
-  background: var(--c-bg-primary);
+  background: var(--blue);
   border-top: 0.5px solid var(--c-border);
   padding: 18px 24px;
   text-align: center;
@@ -386,7 +386,7 @@ ul { list-style: none; }
 .page-heading {
   font-family: var(--font-display);
   font-size: 26px;
-  font-weight: 400;
+  font-weight: 700;
   color: var(--blue);
   margin-bottom: 24px;
   line-height: 1.25;
@@ -519,7 +519,7 @@ a:hover {
   color: var(--c-text-secondary);
   margin-bottom: 32px;
   line-height: 1.65;
-  border-left: 3px solid var(--blue-mid);
+  border-left: 3px solid var(--blue-light);
   padding-left: 14px;
 }
 
@@ -794,7 +794,7 @@ a:hover {
 }
 .step-item.active .step-num {
   background: var(--blue);
-  box-shadow: 0 0 0 4px var(--blue-mid);
+  box-shadow: 0 0 0 4px #afd9ea;
   color: #fff;
 }
 .step-item.active .step-title {

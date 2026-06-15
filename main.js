@@ -1,5 +1,5 @@
 /* ===========================
-   WENDI HELP & SUPPORT — JS
+   I&M HELP & SUPPORT — JS
    =========================== */
 
 /* --- Accordion toggle --- */

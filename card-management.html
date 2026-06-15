@@ -21,7 +21,7 @@
       <a href="index.html" class="logo-img">
         <img
           src="images/im-logo.png"
-          alt="Wendi Logo"
+          alt="I&M Logo"
           style="height: 50px; width: auto; margin-top: 5px"
         />
       </a>
@@ -51,7 +51,7 @@
           >
             <div class="topic-left">
               <div class="topic-icon-box">
-                <i class="ti ti-arrows-exchange" aria-hidden="true"></i>
+                <i class="ti ti-credit-card" aria-hidden="true"></i>
               </div>
               <div>
                 <div class="topic-name">Card Management</div>
@@ -77,120 +77,92 @@
             </ul>
           </div>
         </div>
-
-        <!-- BILL PAYMENT -->
-        <div class="topic-card">
-          <button
-            class="topic-header"
-            aria-expanded="false"
-            onclick="toggleTopic(this)"
-          >
-            <div class="topic-left">
-              <div class="topic-icon-box">
-                <i class="ti ti-file-invoice" aria-hidden="true"></i>
-              </div>
-              <div>
-                <div class="topic-name">Bill Payment</div>
-                <div class="topic-sub">Pay your essential bills quickly</div>
-              </div>
+      <!-- Transfers -->
+      <div class="topic-card">
+        <button class="topic-header" aria-expanded="false" onclick="toggleTopic(this)">
+          <div class="topic-left">
+            <div class="topic-icon-box"><i class="ti ti-arrows-exchange"></i></div>
+            <div>
+              <div class="topic-name">Transfers</div>
+              <div class="topic-sub">Move money across banks, wallets and Western Union</div>
             </div>
-            <i class="ti ti-chevron-down chevron" aria-hidden="true"></i>
-          </button>
-          <div class="topic-body">
-            <ul class="topic-links">
-              <li><a href="#">Utility Bills</a></li>
-              <li><a href="#">TV Subscriptions</a></li>
-              <li><a href="#">Internet Bills</a></li>
-              <li><a href="#">School Fees</a></li>
-            </ul>
           </div>
+          <i class="ti ti-chevron-down chevron"></i>
+        </button>
+        <div class="topic-body">
+          <ul class="topic-links">
+            <li><a href="#">EFT / RTGS</a></li>
+            <li><a href="#">International Transfers (TTs)</a></li>
+            <li><a href="#">Mobile Money Transfer</a></li>
+            <li><a href="#">Western Union</a></li>
+          </ul>
         </div>
+      </div>
 
-        <!-- GROUPS -->
-        <div class="topic-card">
-          <button
-            class="topic-header"
-            aria-expanded="false"
-            onclick="toggleTopic(this)"
-          >
-            <div class="topic-left">
-              <div class="topic-icon-box">
-                <i class="ti ti-users-group" aria-hidden="true"></i>
-              </div>
-              <div>
-                <div class="topic-name">Groups</div>
-                <div class="topic-sub">Manage group money with confidence</div>
-              </div>
+      <!-- Loans -->
+      <div class="topic-card">
+        <button class="topic-header" aria-expanded="false" onclick="toggleTopic(this)">
+          <div class="topic-left">
+            <div class="topic-icon-box"><i class="ti ti-coin"></i></div>
+            <div>
+              <div class="topic-name">Loans</div>
+              <div class="topic-sub">Enjoy our lending services</div>
             </div>
-            <i class="ti ti-chevron-down chevron" aria-hidden="true"></i>
-          </button>
-          <div class="topic-body">
-            <ul class="topic-links">
-              <li><a href="#">Create a Group</a></li>
-              <li><a href="#">Invite Members</a></li>
-              <li><a href="#">Group Contributions</a></li>
-              <li><a href="#">Group Withdrawals</a></li>
-            </ul>
           </div>
+          <i class="ti ti-chevron-down chevron"></i>
+        </button>
+        <div class="topic-body">
+          <ul class="topic-links">
+            <li><a href="#">Apply for a Loan</a></li>
+            <li><a href="#">Check Loan Status</a></li>
+            <li><a href="#">Loan Repayment</a></li>
+          </ul>
         </div>
+      </div>
 
-        <!-- LOANS -->
-        <div class="topic-card">
-          <button
-            class="topic-header"
-            aria-expanded="false"
-            onclick="toggleTopic(this)"
-          >
-            <div class="topic-left">
-              <div class="topic-icon-box">
-                <i class="ti ti-coin" aria-hidden="true"></i>
-              </div>
-              <div>
-                <div class="topic-name">Loans</div>
-                <div class="topic-sub">Enjoy our lending services</div>
-              </div>
+      <!-- Utility Payments -->
+      <div class="topic-card">
+        <button class="topic-header" aria-expanded="false" onclick="toggleTopic(this)">
+          <div class="topic-left">
+            <div class="topic-icon-box"><i class="ti ti-file-invoice"></i></div>
+            <div>
+              <div class="topic-name">Utility Payments</div>
+              <div class="topic-sub">Pay your essential bills quickly</div>
             </div>
-            <i class="ti ti-chevron-down chevron" aria-hidden="true"></i>
-          </button>
-          <div class="topic-body">
-            <ul class="topic-links">
-              <li><a href="#">Apply for a Loan</a></li>
-              <li><a href="#">Check Loan Status</a></li>
-              <li><a href="#">Repay a Loan</a></li>
-              <li><a href="#">Loan Eligibility</a></li>
-            </ul>
           </div>
+          <i class="ti ti-chevron-down chevron"></i>
+        </button>
+        <div class="topic-body">
+          <ul class="topic-links">
+            <li><a href="#">URA Tax Payment</a></li>
+            <li><a href="#">UMEME Electricity</a></li>
+            <li><a href="#">Water Bills</a></li>
+            <li><a href="#">TV Subscriptions</a></li>
+          </ul>
         </div>
+      </div>
 
-        <!-- ACCOUNT SERVICES -->
-        <div class="topic-card">
-          <button
-            class="topic-header"
-            aria-expanded="false"
-            onclick="toggleTopic(this)"
-          >
-            <div class="topic-left">
-              <div class="topic-icon-box">
-                <i class="ti ti-settings" aria-hidden="true"></i>
-              </div>
-              <div>
-                <div class="topic-name">Account Services</div>
-                <div class="topic-sub">
-                  Manage your profile, statements, security and referrals
-                </div>
-              </div>
+      <!-- Account Services -->
+      <div class="topic-card">
+        <button class="topic-header" aria-expanded="false" onclick="toggleTopic(this)">
+          <div class="topic-left">
+            <div class="topic-icon-box"><i class="ti ti-settings"></i></div>
+            <div>
+              <div class="topic-name">Account Services</div>
+              <div class="topic-sub">Manage your profile, statements, security and referrals</div>
             </div>
-            <i class="ti ti-chevron-down chevron" aria-hidden="true"></i>
-          </button>
-          <div class="topic-body">
-            <ul class="topic-links">
-              <li><a href="#">Edit Profile</a></li>
-              <li><a href="#">View Statements</a></li>
-              <li><a href="#">Change PIN</a></li>
-              <li><a href="#">Referral Programme</a></li>
-            </ul>
           </div>
+          <i class="ti ti-chevron-down chevron"></i>
+        </button>
+        <div class="topic-body">
+          <ul class="topic-links">
+            <li><a href="#">Generate Bank Statement</a></li>
+            <li><a href="#">Update Profile Details</a></li>
+            <li><a href="#">Change Internet Banking Password</a></li>
+            <li><a href="#">Register for Internet Banking</a></li>
+          </ul>
         </div>
+      </div>
       </main>
 
       <aside class="page-aside">
