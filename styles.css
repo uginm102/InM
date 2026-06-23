@@ -618,7 +618,7 @@ a {
   transition: background-size 0.3s;
 }
 
-a:hover {
+a:not(.quick-link):hover { 
   background-size: 100% 1px;
 }
 
@@ -857,6 +857,7 @@ a:hover {
   width: 100%;
   aspect-ratio: 9/16;
   position: relative;
+   padding-bottom: 216.4%;
 }
 
 /* Dynamic island — floats over the screenshot */

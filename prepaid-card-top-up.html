@@ -1,208 +1,320 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Debit and Prepaid Card Management - I&M Bank Help</title>
-    <link rel="icon" type="image/png" href="images/im-logo.png">
-  <link rel="stylesheet" href="styles.css?v=1" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;1,600&family=DM+Serif+Display&display=swap" rel="stylesheet" />
-</head>
-<body>
-
-  <nav class="nav">
-    <a href="index.html" class="logo-img">
-      <img src="images/im-logo.png" alt="I&M Logo" style="height: 50px; width: auto; margin-top: 5px;" />
-    </a>    <div class="nav-right">
-      <a href="guides.html" class="nav-link">Guides <i class="ti ti-chevron-down" aria-hidden="true"></i></a>
-    </div>
-  </nav>
-
-  <div class="breadcrumb-bar">
-    <a href="index.html" class="breadcrumb-link">Help</a>
-    <i class="ti ti-chevron-right breadcrumb-sep" aria-hidden="true"></i>
-    <a href="card-management.html" class="breadcrumb-link">Card Management</a>
-    <i class="ti ti-chevron-right breadcrumb-sep" aria-hidden="true"></i>
-    <span class="breadcrumb-current">Debit and Prepaid Card Management</span>
-  </div>
-
-  <div class="page-layout">
-    <main class="page-main">
-      <h1 class="page-heading">Debit and Prepaid Card Management</h1>
-      <p class="article-intro">
-        Use our Internet and Mobile Banking self-service card management tools to securely manage your cards and perform common card-related actions directly from your device.
-      </p>
-
-      <div class="article-grid">
-<!-- ── PHONE CAROUSEL ── -->
-        <div class="carousel-col">
-          <div class="carousel-wrapper">
-    <!-- Left arrow -->
-    <button class="nav-arrow" onclick="prevStep()" aria-label="Previous step">‹</button>
-          <div class="phone-frame">
-            <div class="phone-notch"></div>
-            <div class="phone-screen" id="phoneScreen">
-
-               <!-- Slide 1: PIN login screen -->
-              <div class="slide active" id="slide-0">
-                <img src="images/carousel/1a.jpg" alt="Enter your PIN to log in to Wendi" />
-              </div>
-
-              <!-- Slide 2: Home screen — tap Financial Services -->
-              <div class="slide" id="slide-1">
-                <img src="images/carousel/1b.jpg" alt="Wendi home screen — tap Financial Services" />
-              </div>
-
-              <!-- Slide 3: Financial Services — tap Banking -->
-              <div class="slide" id="slide-2">
-                <img src="images/carousel/2.jpg" alt="Financial Services menu — tap Banking" />
-              </div>
-
-              <!-- Slide 4: Banking Services — choose bank + Wendi to Bank -->
-              <div class="slide" id="slide-3">
-                <img src="images/carousel/3.jpg" alt="Choose your bank and tap Wendi to Bank" />
-              </div>
-
-              <!-- Slide 5: Enter account number and amount -->
-              <div class="slide" id="slide-4">
-                <img src="images/carousel/4.jpg" alt="Enter the payee account number and amount" />
-              </div>
-
-              <!-- Slide 6: Confirm transaction -->
-              <div class="slide" id="slide-5">
-                <img src="images/carousel/5.jpg" alt="Review details and confirm the transfer" />
-              </div>
-
-              <!-- Slide 7: Confirm transaction -->
-              <div class="slide" id="slide-6">
-                <img src="images/carousel/6.jpg" alt="Review details and confirm the transfer" />
-              </div>
-
-              <!-- Slide 8: Confirm transaction -->
-              <div class="slide" id="slide-7">
-                <img src="images/carousel/7.jpg" alt="Review details and confirm the transfer" />
-              </div>
-
-              <!-- Slide 7: Confirm transaction -->
-              <div class="slide" id="slide-8">
-                <img src="images/carousel/8.jpg" alt="Review details and confirm the transfer" />
-              </div>
-
-            </div><!-- /phone-screen -->
-          </div><!-- /phone-frame -->
-<!-- Right arrow -->
-    <button class="nav-arrow" onclick="nextStep()" aria-label="Next step">›</button>
-  </div>
-          <!-- Dots -->
-          <div class="carousel-dots" id="carouselDots">
-            <button class="dot active" onclick="goToStep(0)" aria-label="Step 1"></button>
-            <button class="dot" onclick="goToStep(1)" aria-label="Step 2"></button>
-            <button class="dot" onclick="goToStep(2)" aria-label="Step 3"></button>
-            <button class="dot" onclick="goToStep(3)" aria-label="Step 4"></button>
-            <button class="dot" onclick="goToStep(4)" aria-label="Step 5"></button>
-            <button class="dot" onclick="goToStep(5)" aria-label="Step 6"></button>
-            <button class="dot" onclick="goToStep(6)" aria-label="Step 7"></button>
-            <button class="dot" onclick="goToStep(7)" aria-label="Step 8"></button>
-            <button class="dot" onclick="goToStep(8)" aria-label="Step 9"></button>
-          </div>
-        </div><!-- /carousel-col -->
-
-        
-                <!-- ── STEPS ── -->
-        <div class="steps-list" id="stepsList">
-
-          <div class="step-item active" data-step="0" onclick="goToStep(0)">
-            <div class="step-num">1</div>
-            <div class="step-content">
-              <h3 class="step-title">Log in to On The Go</h3>
-              <p class="step-desc">Open the On The Go mobile app and log in using your Fingerprint or Password.</p>
-            </div>
-          </div>
-
-          <div class="step-item" data-step="1" onclick="goToStep(1)">
-            <div class="step-num">2</div>
-            <div class="step-content">
-              <h3 class="step-title">Tap on Cards</h3>
-              <p class="step-desc">From the home screen, tap the <strong>Cards</strong> button.</p>
-            </div>
-          </div>
-
-          <div class="step-item" data-step="2" onclick="goToStep(2)">
-            <div class="step-num">3</div>
-            <div class="step-content">
-              <h3 class="step-title">Select Prepaid Cards</h3>
-              <p class="step-desc">Choose the <strong>Prepaid Cards</strong> option from the card list.</p>
-            </div>
-          </div>
-
-          <div class="step-item" data-step="3" onclick="goToStep(3)">
-            <div class="step-num">4</div>
-            <div class="step-content">
-              <h3 class="step-title">Open Top-Up option</h3>
-              <p class="step-desc">Tap the <strong>3 dots (⋮)</strong> menu and select <strong>Top-up Prepaid Card</strong>.</p>
-            </div>
-          </div>
-
-          <div class="step-item" data-step="4" onclick="goToStep(4)">
-            <div class="step-num">5</div>
-            <div class="step-content">
-              <h3 class="step-title">Select funding account</h3>
-              <p class="step-desc">Choose the account you wish to fund the card from.</p>
-            </div>
-          </div>
-
-          <div class="step-item" data-step="5" onclick="goToStep(5)">
-            <div class="step-num">6</div>
-            <div class="step-content">
-              <h3 class="step-title">Confirm card &amp; currency</h3>
-              <p class="step-desc">Confirm whether it is your own card or another. If yours, select the top-up currency.</p>
-            </div>
-          </div>
-
-          <div class="step-item" data-step="6" onclick="goToStep(6)">
-            <div class="step-num">7</div>
-            <div class="step-content">
-              <h3 class="step-title">Enter amount &amp; remarks</h3>
-              <p class="step-desc">Enter the top-up amount and add any transaction remarks.</p>
-            </div>
-          </div>
-
-          <div class="step-item" data-step="7" onclick="goToStep(7)">
-            <div class="step-num">8</div>
-            <div class="step-content">
-              <h3 class="step-title">Confirm &amp; Submit</h3>
-              <p class="step-desc">Mark the checkbox to confirm your details, then tap <strong>Submit</strong> to continue.</p>
-            </div>
-          </div>
-
-          <div class="step-item" data-step="8" onclick="goToStep(8)">
-            <div class="step-num">9</div>
-            <div class="step-content">
-              <h3 class="step-title">Enter OTP</h3>
-              <p class="step-desc">Enter the generated one-time password (OTP) to complete the card top-up.</p>
-            </div>
-          </div>
-
-        </div><!-- /steps-list -->
-
-        
-
-      </div><!-- /article-grid -->
-
-      <div class="article-notice" style="margin-top: 32px;">
-        <i class="ti ti-info-circle" aria-hidden="true"></i>
-        <p>You will receive an SMS notification once your Prepaid Card has been successfully topped up. Top-ups are usually instant.</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Debit and Prepaid Card Management - I&M Bank Help</title>
+    <link rel="icon" type="image/png" href="images/im-logo.png" />
+    <link rel="stylesheet" href="styles.css?v=10" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;1,600&family=DM+Serif+Display&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="nav">
+      <a href="index.html" class="logo-img">
+        <img
+          src="images/im-logo.png"
+          alt="I&M Logo"
+          style="height: 50px; width: auto; margin-top: 5px"
+        />
+      </a>
+      <div class="nav-right">
+        <a href="guides.html" class="nav-link"
+          >Guides <i class="ti ti-chevron-down" aria-hidden="true"></i
+        ></a>
       </div>
+    </nav>
 
-    </main>
+    <div class="breadcrumb-bar">
+      <a href="index.html" class="breadcrumb-link">Help</a>
+      <i class="ti ti-chevron-right breadcrumb-sep" aria-hidden="true"></i>
+      <a href="card-management.html" class="breadcrumb-link">Card Management</a>
+      <i class="ti ti-chevron-right breadcrumb-sep" aria-hidden="true"></i>
+      <span class="breadcrumb-current">Debit and Prepaid Card Management</span>
+    </div>
 
-    <aside class="page-aside">
-      <div class="aside-card">
-        <h3 class="aside-heading">Popular Articles</h3>
-        <ul class="aside-links">
-          <li>
+    <div class="page-layout">
+      <main class="page-main">
+        <h1 class="page-heading">Debit and Prepaid Card Management</h1>
+        <p class="article-intro">
+          Use our Internet and Mobile Banking self-service card management tools
+          to securely manage your cards and perform common card-related actions
+          directly from your device.
+        </p>
+
+        <div class="article-grid">
+          <!-- ── PHONE CAROUSEL ── -->
+          <div class="carousel-col">
+            <div class="carousel-wrapper">
+              <!-- Left arrow -->
+              <button
+                class="nav-arrow"
+                onclick="prevStep()"
+                aria-label="Previous step"
+              >
+                ‹
+              </button>
+              <div class="phone-frame">
+                <div class="phone-notch"></div>
+                <div class="phone-screen" id="phoneScreen">
+                  <!-- Slide 1: PIN login screen -->
+                  <div class="slide active" id="slide-0">
+                    <img
+                      src="images/carousel/1a.jpg"
+                      alt="Enter your PIN to log in to Wendi"
+                    />
+                  </div>
+
+                  <!-- Slide 2: Home screen — tap Financial Services -->
+                  <div class="slide" id="slide-1">
+                    <img
+                      src="images/carousel/1b.jpg"
+                      alt="Wendi home screen — tap Financial Services"
+                    />
+                  </div>
+
+                  <!-- Slide 3: Financial Services — tap Banking -->
+                  <div class="slide" id="slide-2">
+                    <img
+                      src="images/carousel/2.jpg"
+                      alt="Financial Services menu — tap Banking"
+                    />
+                  </div>
+
+                  <!-- Slide 4: Banking Services — choose bank + Wendi to Bank -->
+                  <div class="slide" id="slide-3">
+                    <img
+                      src="images/carousel/3.jpg"
+                      alt="Choose your bank and tap Wendi to Bank"
+                    />
+                  </div>
+
+                  <!-- Slide 5: Enter account number and amount -->
+                  <div class="slide" id="slide-4">
+                    <img
+                      src="images/carousel/4.jpg"
+                      alt="Enter the payee account number and amount"
+                    />
+                  </div>
+
+                  <!-- Slide 6: Confirm transaction -->
+                  <div class="slide" id="slide-5">
+                    <img
+                      src="images/carousel/5.jpg"
+                      alt="Review details and confirm the transfer"
+                    />
+                  </div>
+
+                  <!-- Slide 7: Confirm transaction -->
+                  <div class="slide" id="slide-6">
+                    <img
+                      src="images/carousel/6.jpg"
+                      alt="Review details and confirm the transfer"
+                    />
+                  </div>
+
+                  <!-- Slide 8: Confirm transaction -->
+                  <div class="slide" id="slide-7">
+                    <img
+                      src="images/carousel/7.jpg"
+                      alt="Review details and confirm the transfer"
+                    />
+                  </div>
+
+                  <!-- Slide 7: Confirm transaction -->
+                  <div class="slide" id="slide-8">
+                    <img
+                      src="images/carousel/8.jpg"
+                      alt="Review details and confirm the transfer"
+                    />
+                  </div>
+                </div>
+                <!-- /phone-screen -->
+              </div>
+              <!-- /phone-frame -->
+              <!-- Right arrow -->
+              <button
+                class="nav-arrow"
+                onclick="nextStep()"
+                aria-label="Next step"
+              >
+                ›
+              </button>
+            </div>
+            <!-- Dots -->
+            <div class="carousel-dots" id="carouselDots">
+              <button
+                class="dot active"
+                onclick="goToStep(0)"
+                aria-label="Step 1"
+              ></button>
+              <button
+                class="dot"
+                onclick="goToStep(1)"
+                aria-label="Step 2"
+              ></button>
+              <button
+                class="dot"
+                onclick="goToStep(2)"
+                aria-label="Step 3"
+              ></button>
+              <button
+                class="dot"
+                onclick="goToStep(3)"
+                aria-label="Step 4"
+              ></button>
+              <button
+                class="dot"
+                onclick="goToStep(4)"
+                aria-label="Step 5"
+              ></button>
+              <button
+                class="dot"
+                onclick="goToStep(5)"
+                aria-label="Step 6"
+              ></button>
+              <button
+                class="dot"
+                onclick="goToStep(6)"
+                aria-label="Step 7"
+              ></button>
+              <button
+                class="dot"
+                onclick="goToStep(7)"
+                aria-label="Step 8"
+              ></button>
+              <button
+                class="dot"
+                onclick="goToStep(8)"
+                aria-label="Step 9"
+              ></button>
+            </div>
+          </div>
+          <!-- /carousel-col -->
+
+          <!-- ── STEPS ── -->
+          <div class="steps-list" id="stepsList">
+            <div class="step-item active" data-step="0" onclick="goToStep(0)">
+              <div class="step-num">1</div>
+              <div class="step-content">
+                <h3 class="step-title">Log in to On The Go</h3>
+                <p class="step-desc">
+                  Open the On The Go mobile app and log in using your
+                  Fingerprint or Password.
+                </p>
+              </div>
+            </div>
+
+            <div class="step-item" data-step="1" onclick="goToStep(1)">
+              <div class="step-num">2</div>
+              <div class="step-content">
+                <h3 class="step-title">Tap on Cards</h3>
+                <p class="step-desc">
+                  From the home screen, tap the <strong>Cards</strong> button.
+                </p>
+              </div>
+            </div>
+
+            <div class="step-item" data-step="2" onclick="goToStep(2)">
+              <div class="step-num">3</div>
+              <div class="step-content">
+                <h3 class="step-title">Select Prepaid Cards</h3>
+                <p class="step-desc">
+                  Choose the <strong>Prepaid Cards</strong> option from the card
+                  list.
+                </p>
+              </div>
+            </div>
+
+            <div class="step-item" data-step="3" onclick="goToStep(3)">
+              <div class="step-num">4</div>
+              <div class="step-content">
+                <h3 class="step-title">Open Top-Up option</h3>
+                <p class="step-desc">
+                  Tap the <strong>3 dots (⋮)</strong> menu and select
+                  <strong>Top-up Prepaid Card</strong>.
+                </p>
+              </div>
+            </div>
+
+            <div class="step-item" data-step="4" onclick="goToStep(4)">
+              <div class="step-num">5</div>
+              <div class="step-content">
+                <h3 class="step-title">Select funding account</h3>
+                <p class="step-desc">
+                  Choose the account you wish to fund the card from.
+                </p>
+              </div>
+            </div>
+
+            <div class="step-item" data-step="5" onclick="goToStep(5)">
+              <div class="step-num">6</div>
+              <div class="step-content">
+                <h3 class="step-title">Confirm card &amp; currency</h3>
+                <p class="step-desc">
+                  Confirm whether it is your own card or another. If yours,
+                  select the top-up currency.
+                </p>
+              </div>
+            </div>
+
+            <div class="step-item" data-step="6" onclick="goToStep(6)">
+              <div class="step-num">7</div>
+              <div class="step-content">
+                <h3 class="step-title">Enter amount &amp; remarks</h3>
+                <p class="step-desc">
+                  Enter the top-up amount and add any transaction remarks.
+                </p>
+              </div>
+            </div>
+
+            <div class="step-item" data-step="7" onclick="goToStep(7)">
+              <div class="step-num">8</div>
+              <div class="step-content">
+                <h3 class="step-title">Confirm &amp; Submit</h3>
+                <p class="step-desc">
+                  Mark the checkbox to confirm your details, then tap
+                  <strong>Submit</strong> to continue.
+                </p>
+              </div>
+            </div>
+
+            <div class="step-item" data-step="8" onclick="goToStep(8)">
+              <div class="step-num">9</div>
+              <div class="step-content">
+                <h3 class="step-title">Enter OTP</h3>
+                <p class="step-desc">
+                  Enter the generated one-time password (OTP) to complete the
+                  card top-up.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- /steps-list -->
+        </div>
+        <!-- /article-grid -->
+
+        <div class="article-notice" style="margin-top: 32px">
+          <i class="ti ti-info-circle" aria-hidden="true"></i>
+          <p>
+            You will receive an SMS notification once your Prepaid Card has been
+            successfully topped up. Top-ups are usually instant.
+          </p>
+        </div>
+      </main>
+
+      <aside class="page-aside">
+        <div class="aside-card">
+          <h3 class="aside-heading">Popular Articles</h3>
+          <ul class="aside-links">
+            <li>
               <a href="#"
                 ><i class="ti ti-arrow-right" aria-hidden="true"></i>Mobile
                 Money</a
@@ -226,66 +338,85 @@
                 Payment</a
               >
             </li>
-        </ul>
-      </div>
-      <div class="aside-card" style="margin-top: 16px;">
-        <h3 class="aside-heading">Need more help?</h3>
-        <p style="font-size:13px; color: var(--c-text-secondary); margin-bottom: 12px;">Our support team is available 24/7.</p>
-        <a href="#" class="contact-btn"><i class="ti ti-headset" aria-hidden="true"></i> Contact Support</a>
-      </div>
-    </aside>
-  </div>
+          </ul>
+        </div>
+        <div class="aside-card" style="margin-top: 16px">
+          <h3 class="aside-heading">Need more help?</h3>
+          <p
+            style="
+              font-size: 13px;
+              color: var(--c-text-secondary);
+              margin-bottom: 12px;
+            "
+          >
+            Our support team is available 24/7.
+          </p>
+          <a href="#" class="contact-btn"
+            ><i class="ti ti-headset" aria-hidden="true"></i> Contact Support</a
+          >
+        </div>
+      </aside>
+    </div>
 
-  <footer class="footer">
-    <p>&copy; 2026 I&M Bank. All rights reserved.</p>
-  </footer>
+    <footer class="footer">
+      <p>&copy; 2026 I&M Bank. All rights reserved.</p>
+    </footer>
 
-  <script src="main.js"></script>
-  <script>
-    var currentStep = 0;
-    function nextStep() {
-    let next = (currentStep + 1) % 9;
-    goToStep(next);
-  }
+    <script src="main.js"></script>
+    <script>
+      var currentStep = 0;
+      function nextStep() {
+        let next = (currentStep + 1) % 9;
+        goToStep(next);
+      }
 
-  function prevStep() {
-    let prev = (currentStep - 1 + 9) % 9;
-    goToStep(prev);
-  }
+      function prevStep() {
+        let prev = (currentStep - 1 + 9) % 9;
+        goToStep(prev);
+      }
 
-    function goToStep(index) {
-      document.querySelectorAll('.step-item').forEach(function(el) { el.classList.remove('active'); });
-      document.querySelectorAll('.slide').forEach(function(el) { el.classList.remove('active'); });
-      document.querySelectorAll('.dot').forEach(function(el) { el.classList.remove('active'); });
+      function goToStep(index) {
+        document.querySelectorAll(".step-item").forEach(function (el) {
+          el.classList.remove("active");
+        });
+        document.querySelectorAll(".slide").forEach(function (el) {
+          el.classList.remove("active");
+        });
+        document.querySelectorAll(".dot").forEach(function (el) {
+          el.classList.remove("active");
+        });
 
-      var stepEl = document.querySelector('[data-step="' + index + '"]');
-      if (stepEl) stepEl.classList.add('active');
+        var stepEl = document.querySelector('[data-step="' + index + '"]');
+        if (stepEl) stepEl.classList.add("active");
 
-      var slideEl = document.getElementById('slide-' + index);
-      if (slideEl) slideEl.classList.add('active');
+        var slideEl = document.getElementById("slide-" + index);
+        if (slideEl) slideEl.classList.add("active");
 
-      var dots = document.querySelectorAll('.dot');
-      if (dots[index]) dots[index].classList.add('active');
+        var dots = document.querySelectorAll(".dot");
+        if (dots[index]) dots[index].classList.add("active");
 
-      currentStep = index;
-    }
+        currentStep = index;
+      }
 
-    // Scroll-spy: advance carousel as user scrolls through steps
-    function onScroll() {
-      var items = document.querySelectorAll('.step-item');
-      var windowMid = window.scrollY + window.innerHeight * 0.42;
-      var best = 0;
-      var bestDist = Infinity;
-      items.forEach(function(item, i) {
-        var rect = item.getBoundingClientRect();
-        var mid = window.scrollY + rect.top + rect.height / 2;
-        var dist = Math.abs(mid - windowMid);
-        if (dist < bestDist) { bestDist = dist; best = i; }
-      });
-      if (best !== currentStep) goToStep(best);
-    }
+      // Scroll-spy: advance carousel as user scrolls through steps
+      function onScroll() {
+        var items = document.querySelectorAll(".step-item");
+        var windowMid = window.scrollY + window.innerHeight * 0.42;
+        var best = 0;
+        var bestDist = Infinity;
+        items.forEach(function (item, i) {
+          var rect = item.getBoundingClientRect();
+          var mid = window.scrollY + rect.top + rect.height / 2;
+          var dist = Math.abs(mid - windowMid);
+          if (dist < bestDist) {
+            bestDist = dist;
+            best = i;
+          }
+        });
+        if (best !== currentStep) goToStep(best);
+      }
 
-    window.addEventListener('scroll', onScroll, { passive: true });
-  </script>
-</body>
+      window.addEventListener("scroll", onScroll, { passive: true });
+    </script>
+  </body>
 </html>
