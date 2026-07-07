@@ -387,13 +387,14 @@
     <script src="main.js"></script>
     <script>
       var currentStep = 0;
+      var numberOfSteps = 10; // Total number of steps in the carousel
       function nextStep() {
-        let next = (currentStep + 1) % 9;
+        let next = (currentStep + 1) % numberOfSteps;
         goToStep(next);
       }
 
       function prevStep() {
-        let prev = (currentStep - 1 + 9) % 9;
+        let prev = (currentStep - 1 + numberOfSteps) % numberOfSteps;
         goToStep(prev);
       }
 
