@@ -75,7 +75,7 @@
                   <!-- Slide 2: Home screen — tap Financial Services -->
                   <div class="slide" id="slide-1">
                     <img
-                      src="images/carousel/2.jpg"
+                      src="images/carousel/2.jpeg"
                       alt="Wendi home screen — tap Financial Services"
                     />
                   </div>
@@ -132,6 +132,14 @@
                   <div class="slide" id="slide-8">
                     <img
                       src="images/carousel/9.jpg"
+                      alt="Review details and confirm the transfer"
+                    />
+                  </div>
+
+                   <!-- Slide 10: Confirm transaction -->
+                  <div class="slide" id="slide-9">
+                    <img
+                      src="images/carousel/10.jpg"
                       alt="Review details and confirm the transfer"
                     />
                   </div>
@@ -194,6 +202,11 @@
                 class="dot"
                 onclick="goToStep(8)"
                 aria-label="Step 9"
+              ></button>
+              <button
+                class="dot"
+                onclick="goToStep(9)"
+                aria-label="Step 10"
               ></button>
             </div>
           </div>
@@ -291,8 +304,17 @@
               <div class="step-content">
                 <h3 class="step-title">Enter OTP</h3>
                 <p class="step-desc">
-                  Enter the generated one-time password (OTP) to complete the
-                  card top-up.
+                  Enter the generated one-time password (OTP) to complete the card top-up.
+                </p>
+              </div>
+            </div>
+
+            <div class="step-item" data-step="9" onclick="goToStep(9)">
+              <div class="step-num">10</div>
+              <div class="step-content">
+                <h3 class="step-title"> Topup Confirmation</h3>
+                <p class="step-desc">
+                  Receive top-up confirmation message of success or failure.
                 </p>
               </div>
             </div>
